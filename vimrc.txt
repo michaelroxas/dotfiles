@@ -1,0 +1,60 @@
+"Syntax highlighting
+syntax on
+
+"Indentions
+set tabstop=4
+set softtabstop=4
+set expandtab
+set splitbelow
+set smartindent
+
+"Number lining
+set number
+"set rnu
+set smartindent
+set nowrap
+set smartcase
+
+"Swap files
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+
+set showcmd
+filetype indent on
+set wildmenu
+set lazyredraw
+set showmatch
+
+set hlsearch
+
+nnoremap <leader><space> :nohlsearch<CR>
+inoremap jj <ESC>
+
+set foldenable
+set foldlevelstart=10
+nnoremap <space> za
+set foldmethod=indent
+
+nnoremap j gj
+nnoremap k gk
+
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" Plugins
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'trope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+
+call vundle#end()
+
+"https://linuxhint.com/vimrc_tutorial/
+
